@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_screen">#FFF5F5F5</color>
+    <color name="text_primary">#FF212121</color>
+    <color name="text_label">#FF555555</color>
+    <color name="text_hint">#FF9E9E9E</color>
+    <color name="accent">#FF1565C0</color>
+    <color name="divider">#FFBDBDBD</color>
+    <color name="question_bg">#FFFFFFFF</color>
+    <color name="btn_submit">#FF1565C0</color>
+</resources>

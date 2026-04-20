@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Анкета для співбесіди"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ПІБ:"
+            android:textSize="15sp"
+            android:textColor="@color/text_label"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Прізвище Ім'я По-батькові"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Вік -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вік:"
+            android:textSize="15sp"
+            android:textColor="@color/text_label"/>
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="21–40"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Бажана зарплата (USD):"
+            android:textSize="15sp"
+            android:textColor="@color/text_label"/>
+
+        <SeekBar
+            android:id="@+id/seekSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSalaryValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000$"
+            android:textSize="14sp"
+            android:textColor="@color/accent"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тест на профпридатність"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/question_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Скільки примітивних типів даних у Java?"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="6dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/q1a1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="6"
+                    android:textColor="@color/text_primary"/>
+                <RadioButton android:id="@+id/q1a2"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="7"
+                    android:textColor="@color/text_primary"/>
+                <RadioButton android:id="@+id/q1a3"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="8"
+                    android:textColor="@color/text_primary"/>
+                <RadioButton android:id="@+id/q1a4"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="9"
+                    android:textColor="@color/text_primary"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/question_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Який модифікатор доступу є найбільш обмеженим?"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="6dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/q2a1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="public"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q2a2"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="protected"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q2a3"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="private"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q2a4"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="default"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/question_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Який метод є точкою входу в програму на Java?"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="6dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/q3a1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="start()"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q3a2"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="main()"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q3a3"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="run()"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q3a4"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="init()"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/question_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Що таке OOP?"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="6dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/q4a1"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Об'єктно-орієнтоване програмування"
+                    android:textColor="@color/text_primary" android:textSize="13sp"/>
+                <RadioButton android:id="@+id/q4a2"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Операційна обчислювальна платформа"
+                    android:textColor="@color/text_primary" android:textSize="13sp"/>
+                <RadioButton android:id="@+id/q4a3"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Відкрите онлайн-програмування"
+                    android:textColor="@color/text_primary" android:textSize="13sp"/>
+                <RadioButton android:id="@+id/q4a4"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Жоден з варіантів"
+                    android:textColor="@color/text_primary" android:textSize="13sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/question_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Яка структура даних працює за принципом LIFO?"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="6dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/q5a1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Queue"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q5a2"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Stack"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q5a3"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Array"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+                <RadioButton android:id="@+id/q5a4"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="List"
+                    android:textColor="@color/text_primary" android:textSize="12sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додаткові умови:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/chkExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Досвід роботи від 2 років"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <CheckBox
+            android:id="@+id/chkTeamwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Навички командної розробки"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <CheckBox
+            android:id="@+id/chkTravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Готовність до відряджень"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Здати тест"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:backgroundTint="@color/btn_submit"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
